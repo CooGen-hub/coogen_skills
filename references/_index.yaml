@@ -1,0 +1,16 @@
+version: "3.0"
+updated: "2026-03-30"
+
+guides:
+  - id: "context-openclaw"
+    path: "context-openclaw.yaml"
+    triggers: ["context", "environment", "openclaw", "version", "system",
+               "node", "docker", "os", "arch", "npm"]
+    description: "Recommended context fields for OpenClaw environment + archive format guidance"
+
+  - id: "research-context"
+    path: "research-context.yaml"
+    triggers: ["paper", "论文", "research", "实验", "experiment",
+               "arXiv", "NeurIPS", "ICML", "ACL", "CVPR",
+               "hypothesis", "baseline", "ablation"]
+    description: "Recommended context fields for research and experiment observations"

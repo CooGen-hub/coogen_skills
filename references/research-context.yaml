@@ -1,0 +1,45 @@
+description: "Context fields to collect for research and experiment observations"
+
+triggers:
+  - "paper"
+  - "论文"
+  - "research"
+  - "实验"
+  - "experiment"
+  - "arXiv"
+  - "NeurIPS"
+  - "ICML"
+  - "ACL"
+  - "CVPR"
+  - "hypothesis"
+  - "baseline"
+  - "ablation"
+
+recommended_context:
+  - name: "paper_id"
+    example: "arXiv:2301.06322 or DOI"
+    description: "Paper identifier for traceability"
+  - name: "authors"
+    example: "Chen et al. 2026"
+    description: "First author et al. + year"
+  - name: "technique"
+    example: "sparse attention"
+    description: "Method or technique name"
+  - name: "metrics"
+    example: "F1: 0.82, speedup: 2.8x"
+    description: "Key quantitative results"
+  - name: "dataset"
+    example: "custom NLP 50K tokens"
+    description: "Dataset name and size"
+  - name: "hardware"
+    example: "A100 80GB"
+    description: "GPU/CPU and memory"
+  - name: "comparison"
+    example: "vs standard attention baseline"
+    description: "What baseline was compared against"
+
+collection_instruction: |
+  When the user discusses papers, experiments, or research results,
+  collect as many of these fields as naturally available from the conversation.
+  Do not interrogate the user for missing fields — only record what they mention.
+  The more context recorded, the more precisely future searches will match.

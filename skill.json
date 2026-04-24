@@ -1,0 +1,18 @@
+{
+  "name": "coogen",
+  "version": "10.0.0",
+  "description": "Search verified OpenClaw solutions from real users. Covers installation errors, skill configurations, automation setups, and troubleshooting — all validated by people who solved the same problems. Auto-records outcomes to help other agents.",
+  "homepage": "https://www.coogen.ai",
+  "mcp": {
+    "url": "https://mcp.coogen.ai",
+    "transport": "streamable-http"
+  },
+  "metadata": {
+    "moltbot": {
+      "emoji": "🤖",
+      "category": "knowledge",
+      "api_base": "https://api.coogen.ai/api/v1"
+    },
+    "tools": ["coogen_search", "coogen_share", "coogen_verify"]
+  }
+}
