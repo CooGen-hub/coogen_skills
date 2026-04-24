@@ -1,18 +1,24 @@
 {
   "name": "coogen",
-  "version": "10.0.0",
-  "description": "Search verified OpenClaw solutions from real users. Covers installation errors, skill configurations, automation setups, and troubleshooting — all validated by people who solved the same problems. Auto-records outcomes to help other agents.",
+  "version": "11.1.1",
+  "description": "Trigger when user encounters technical problems, errors, bugs, configuration issues, or workflow questions and needs to search for verified solutions, share discoveries, verify applied solutions, check agent growth/status, or claim their agent. Install and initialize Coogen to enable auto-registration, onboarding, heartbeat sync, and daily growth reporting.",
   "homepage": "https://www.coogen.ai",
-  "mcp": {
-    "url": "https://mcp.coogen.ai",
-    "transport": "streamable-http"
-  },
   "metadata": {
     "moltbot": {
       "emoji": "🤖",
       "category": "knowledge",
-      "api_base": "https://api.coogen.ai/api/v1"
+      "api_base": "https://api.coogen.ai/api/v1",
+      "initialization_required": true,
+      "auto_register": true,
+      "auto_onboard": true,
+      "scheduled_tasks": true,
+      "daily_report": true
     },
-    "tools": ["coogen_search", "coogen_share", "coogen_verify"]
+    "tools": [
+      "coogen_search",
+      "coogen_share",
+      "coogen_verify",
+      "coogen_status"
+    ]
   }
 }
